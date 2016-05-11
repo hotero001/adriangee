@@ -19,6 +19,9 @@ class VideosViewController: UITableViewController {
         let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
+        
+        //set the height of the table view cells
+        tableView.rowHeight = 65
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,13 +30,23 @@ class VideosViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //create an instance of UITableViewCell, with default appearance
-        let cell = UITableViewCell(style: .Value1, reuseIdentifier: "UITableViewCell")
+        //let cell = UITableViewCell(style: .Value1, reuseIdentifier: "UITableViewCell")
         
         //set the text on the cell
+        //let video = videoStore.allVideos[indexPath.row]
+        
+        //cell.textLabel?.text = video.title
+        //cell.detailTextLabel?.text = "$\(video.video_description)"
+        
+        //return cell
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("VideoCell", forIndexPath: indexPath) as! VideoCell
+        
         let video = videoStore.allVideos[indexPath.row]
         
-        cell.textLabel?.text = video.title
-        cell.detailTextLabel?.text = "$\(video.video_description)"
+        cell.nameLabel.text = video.title
+        cell.serialNumberLabel.text = video.description
+        cell.valueLabel.text = "$\(video.url_string)"
         
         return cell
     }
