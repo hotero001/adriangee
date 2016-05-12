@@ -51,7 +51,7 @@
                                     <outlet property="nameLabel" destination="HkD-D8-pEZ" id="uVx-2w-Jdj"/>
                                     <outlet property="serialNumberLabel" destination="BpR-cE-pRK" id="bx6-69-eAn"/>
                                     <outlet property="valueLabel" destination="MC4-4c-7xa" id="ulT-Ex-UL2"/>
-                                    <segue destination="IRf-hT-QLI" kind="show" id="qra-5T-rjY"/>
+                                    <segue destination="IRf-hT-QLI" kind="show" identifier="ShowVideo" id="qra-5T-rjY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="767" y="260"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="cif-8w-kAD">
             <objects>
-                <viewController id="IRf-hT-QLI" sceneMemberID="viewController">
+                <viewController id="IRf-hT-QLI" customClass="DetailViewController" customModule="adriangee" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fa0-6Q-KFi"/>
                         <viewControllerLayoutGuide type="bottom" id="Fm0-1q-skV"/>
@@ -128,6 +128,12 @@
                             <constraint firstItem="KKm-hr-Xyj" firstAttribute="leading" secondItem="rCn-nV-Jkr" secondAttribute="leading" id="q7h-NC-Orl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="N1b-fr-yFp" id="eW5-QN-Bqf"/>
+                        <outlet property="nameField" destination="KKm-hr-Xyj" id="Mxf-FA-Dm6"/>
+                        <outlet property="serialNumberField" destination="rCn-nV-Jkr" id="esK-xB-XWF"/>
+                        <outlet property="valueField" destination="F0u-kp-mRa" id="8K9-tW-tx3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doE-kq-ccj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

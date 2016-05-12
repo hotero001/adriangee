@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C8F326CE1CE2BC7A00F4E702 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F326CD1CE2BC7A00F4E702 /* VideoCell.swift */; };
+		C8F326D01CE445C000F4E702 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F326CF1CE445C000F4E702 /* DetailViewController.swift */; };
 		C8FD5AC41CDEECE200CAF85C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FD5AC31CDEECE200CAF85C /* AppDelegate.swift */; };
 		C8FD5AC91CDEECE200CAF85C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8FD5AC71CDEECE200CAF85C /* Main.storyboard */; };
 		C8FD5ACC1CDEECE200CAF85C /* adriangee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8FD5ACA1CDEECE200CAF85C /* adriangee.xcdatamodeld */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		C8F326CD1CE2BC7A00F4E702 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		C8F326CF1CE445C000F4E702 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C8FD5AC01CDEECE100CAF85C /* adriangee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adriangee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FD5AC31CDEECE200CAF85C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8FD5AC81CDEECE200CAF85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				C8FD5AF41CE16A8600CAF85C /* VideosViewController.swift */,
 				C8F326CD1CE2BC7A00F4E702 /* VideoCell.swift */,
 				C8FD5AC71CDEECE200CAF85C /* Main.storyboard */,
+				C8F326CF1CE445C000F4E702 /* DetailViewController.swift */,
 				C8FD5ACD1CDEECE200CAF85C /* Assets.xcassets */,
 				C8FD5ACF1CDEECE200CAF85C /* LaunchScreen.storyboard */,
 				C8FD5AD21CDEECE200CAF85C /* Info.plist */,
@@ -274,6 +277,7 @@
 				C8FD5AF51CE16A8600CAF85C /* VideosViewController.swift in Sources */,
 				C8FD5AC41CDEECE200CAF85C /* AppDelegate.swift in Sources */,
 				C8F326CE1CE2BC7A00F4E702 /* VideoCell.swift in Sources */,
+				C8F326D01CE445C000F4E702 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

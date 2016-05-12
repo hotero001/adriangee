@@ -50,4 +50,21 @@ class VideosViewController: UITableViewController {
         
         return cell
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //If the triggered segue is the "ShowVideo" segue
+        if segue.identifier == "ShowVideo" {
+            //Figure out which row was just tapped
+            if let row = tableView.indexPathForSelectedRow?.row {
+                //Get the item associated with this row and pass it along
+                let video = videoStore.allVideos[row]
+                let detailViewController = segue.destinationViewController as! DetailViewController
+                detailViewController.video = video
+            }
+        }
+    }
 }
+
+
+
+
