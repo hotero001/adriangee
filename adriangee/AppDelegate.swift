@@ -23,7 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let videoStore = VideoStore()
         
         //Access the VideosViewController and set its video store
-        let videosController = window!.rootViewController as! VideosViewController
+        //let videosController = window!.rootViewController as! VideosViewController
+        
+        let navController = window!.rootViewController as! UINavigationController
+        let videosController = navController.topViewController as! VideosViewController
+        
         videosController.videoStore = videoStore
         return true
     }
