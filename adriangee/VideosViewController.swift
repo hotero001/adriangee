@@ -22,6 +22,9 @@ class VideosViewController: UITableViewController {
         
         //set the height of the table view cells
         tableView.rowHeight = 65
+        
+        navigationController!.navigationBar.barTintColor = UIColor(red: 0, green: 0.4784, blue: 0.8, alpha: 1.0)
+        self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,6 +65,11 @@ class VideosViewController: UITableViewController {
                 detailViewController.video = video
             }
         }
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
 }
 

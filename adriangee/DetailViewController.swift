@@ -26,4 +26,13 @@ class DetailViewController: UIViewController {
         valueField.text = video.date
         dateLabel.text = video.url_string
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        //Save the changes to video
+        video.title = nameField.text ?? ""
+        video.video_description = serialNumberField.text!
+        
+    }
 }
